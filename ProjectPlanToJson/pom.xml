@@ -123,20 +123,8 @@
 						</execution>
 					</executions>
 				</plugin> -->
-				<plugin>
-					<groupId>com.heroku.sdk</groupId>
-					<artifactId>heroku-maven-plugin</artifactId>
-					<version>2.0.6</version>
-					<configuration>
-						<buildpacks>
-							<buildpack>heroku/exec</buildpack>
-							<buildpack>heroku/metrics</buildpack>
-							<buildpack>heroku/jvm</buildpack>
-						</buildpacks>
-					</configuration>
-				</plugin>
 				
-				<!-- <plugin>
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>2.3</version>
@@ -158,7 +146,7 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin> -->
+				</plugin>
 			</plugins>
 		<!-- </pluginManagement> -->
 	</build>

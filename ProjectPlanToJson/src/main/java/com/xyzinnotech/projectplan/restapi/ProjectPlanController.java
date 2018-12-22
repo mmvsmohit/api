@@ -19,7 +19,7 @@ import com.xyzinnotech.projectplan.service.ProjectReader;
 public class ProjectPlanController {
 	@POST
 	@Path("/mppToJson")
-	@Produces(MediaType.TEXT_PLAIN)
+	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	public Response getMsg(@FormDataParam("file")InputStream in,@FormDataParam("file") FormDataContentDisposition fileDetail) {
  		ProjectReader projectReader = new ProjectReader();
